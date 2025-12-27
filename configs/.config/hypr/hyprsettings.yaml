@@ -1,0 +1,263 @@
+program_settings:
+  programs:
+    VirtualTerminal: /usr/bin/alacritty
+    FileManager: /usr/bin/nautilus
+    QuickSearch: /usr/bin/anyrun
+    hyprpaper: hyprpaper
+  startup_programs:
+    hyprpaper: hyprpaper
+display_settings:
+  monitor_configurations:
+    eDP-1:
+      enabled: true
+      information:
+        port_name: eDP-1
+        brand_name: BOE
+        model_name: '0x0812'
+        serial_number: ''
+        min_video_mode:
+          refresh_rate: 60
+          width_resolution: 640
+          height_resolution: 480
+        max_video_mode:
+          refresh_rate: 60
+          width_resolution: 1920
+          height_resolution: 1080
+      video_mode:
+        refresh_rate: 60
+        width_resolution: 1920
+        height_resolution: 1080
+      x_offset: 0
+      y_offset: 0
+      resolution_scale: 1.0
+      orientation: None
+appearance_settings:
+  wallpaper_path: ~/OneDrive/Pictures/Wallpapers/himeno.jpg
+  cursor_size: 0
+  cursor_theme: ''
+  force_default_wallpaper: false
+  disable_hyprland_logo: false
+  inner_gab: 6.0
+  outer_gab: 10.0
+  border_size: 2.0
+  active_border_color: rgb(26,95,180)
+  inactive_border_color: rgb(98,160,234)
+  resize_on_border: true
+  allow_tearing: false
+  rounding: 8.0
+  rounding_power: 2.0
+  dim_inactive: false
+  active_opacity: 1.0
+  inactive_opacity: 6.0
+  active_shadow: true
+  shadow_range: 8.0
+  shadow_render_power: 2.0
+  shadow_color: rgb(36,31,49)
+  active_blur: true
+  blur_size: 2.0
+  blur_passes: 1
+  blur_vibrancy: 2.0
+  layout: dwindle
+  master_status: master
+  pseudo_tiling: true
+  split_preservation: true
+input_settings:
+  keyboard_layout: de
+  numlock_enabled: false
+  keyboard_repeat_rate: 25
+  keyboard_repeat_delay: 600
+  mouse_sensitivity: 0.0
+  mouse_left_handed: false
+  mouse_scroll_factor: 0.0
+  mouse_natural_scroll: false
+keybind_settings:
+  program_keybinds:
+    SwitchWorkspaceOne:
+      modifier_keys:
+      - SUPER
+      key: '1'
+    SwitchWorkspaceFive:
+      modifier_keys:
+      - SUPER
+      key: '5'
+    SwitchWorkspaceEight:
+      modifier_keys:
+      - SUPER
+      key: '8'
+    ScreenshotWindow:
+      modifier_keys:
+      - SHIFT
+      - SUPER
+      key: PRINT
+    SwitchWorkspaceSeven:
+      modifier_keys:
+      - SUPER
+      key: '7'
+    MoveWorkspaceSeven:
+      modifier_keys:
+      - SHIFT
+      - SUPER
+      key: '7'
+    SwitchWorkspaceNine:
+      modifier_keys:
+      - SUPER
+      key: '9'
+    CloseWindow:
+      modifier_keys:
+      - SUPER
+      key: C
+    Pseudo:
+      modifier_keys:
+      - SUPER
+      key: H
+    MoveWorkspaceNine:
+      modifier_keys:
+      - SHIFT
+      - SUPER
+      key: '9'
+    EmojiSelector:
+      modifier_keys:
+      - SUPER
+      key: PERIOD
+    FocusTopWindow:
+      modifier_keys:
+      - SUPER
+      key: UP
+    SplitWindow:
+      modifier_keys:
+      - SUPER
+      key: J
+    ExitHyprland:
+      modifier_keys:
+      - SUPER
+      key: M
+    MoveWorkspaceThree:
+      modifier_keys:
+      - SHIFT
+      - SUPER
+      key: '3'
+    ToggleFloatingWindow:
+      modifier_keys:
+      - SUPER
+      key: V
+    SwitchWorkspaceFour:
+      modifier_keys:
+      - SUPER
+      key: '4'
+    FocusRightWindow:
+      modifier_keys:
+      - SUPER
+      key: RIGHT
+    SwitchWorkspaceTwo:
+      modifier_keys:
+      - SUPER
+      key: '2'
+    MoveWorkspaceOne:
+      modifier_keys:
+      - SHIFT
+      - SUPER
+      key: '1'
+    MoveWorkspaceSix:
+      modifier_keys:
+      - SUPER
+      key: '6'
+    Terminal:
+      modifier_keys:
+      - SUPER
+      key: Q
+    MoveWorkspaceFive:
+      modifier_keys:
+      - SUPER
+      - SHIFT
+      key: '5'
+    MoveWorkspaceZero:
+      modifier_keys:
+      - SHIFT
+      - SUPER
+      key: '0'
+    MoveWorkspaceFour:
+      modifier_keys:
+      - SHIFT
+      - SUPER
+      key: '4'
+    RunProgram:
+      modifier_keys:
+      - SUPER
+      key: R
+    MoveWorkspaceTwo:
+      modifier_keys:
+      - SHIFT
+      - SUPER
+      key: '2'
+    Screenshot:
+      modifier_keys:
+      - SUPER
+      key: PRINT
+    SwitchWorkspaceSix:
+      modifier_keys:
+      - SUPER
+      key: '6'
+    FocusLeftWindow:
+      modifier_keys:
+      - SUPER
+      key: LEFT
+    FileManager:
+      modifier_keys:
+      - SUPER
+      key: E
+    SwitchWorkspaceZero:
+      modifier_keys:
+      - SUPER
+      key: '0'
+    SwitchWorkspaceThree:
+      modifier_keys:
+      - SUPER
+      key: '3'
+    MoveWorkspaceEight:
+      modifier_keys:
+      - SHIFT
+      - SUPER
+      key: '8'
+    FocusBottomWindow:
+      modifier_keys:
+      - SUPER
+      key: DOWN
+    LockScreen:
+      modifier_keys:
+      - SUPER
+      key: L
+  custom_keybinds: {}
+lockscreen_settings:
+  hide_cursor: false
+  grace: 0.0
+  fall_timeout: 0
+  lockscreen_wallpaper: ~/OneDrive/Pictures/Wallpapers/himeno.jpg
+  blur_size: 0
+  blur_passes: 0
+  noise: 0.0
+  contrast: 0.0
+  brightness: 0.0
+  vibrancy: 0.0
+  input_width: 0
+  input_height: 0
+  input_outline_thickness: 0
+  input_dots_size: 0
+  input_dots_spacing: 0
+  input_dots_center: false
+  input_outer_color: rgba(0,0,0,0)
+  input_inner_color: rgba(0,0,0,0)
+  input_font_color: rgba(0,0,0,0)
+  input_placeholder_text: ''
+  hide_input: false
+  input_x_position: 0
+  input_y_position: 0
+  input_vertical_alignment: ''
+  input_horizontal_alignment: ''
+  display_text: ''
+  display_text_color: rgba(0,0,0,0)
+  display_text_font_size: 0
+  display_text_font: ''
+  display_text_x_position: 0
+  display_text_y_position: 0
+  display_text_vertical_alignment: ''
+  display_text_horizontal_alignment: ''

@@ -1,0 +1,13 @@
+[general]
+live_config_reload = true
+
+[window]
+blur = true
+opacity = 0.8
+decorations_theme_variant = "Dark"
+
+[[hints.enabled]]
+hyperlinks = true
+post_processing = true 
+persist = true 
+action = "Copy"

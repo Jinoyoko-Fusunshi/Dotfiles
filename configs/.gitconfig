@@ -1,0 +1,13 @@
+[core]
+  editor = nvim
+
+[user]
+	name = Jinoyoko Fusunshi
+	email = jinoyoko@outlook.com
+
+[safe]
+	directory = /home/jinoyoko/Repos
+	directory = /home/jinoyoko/dotfiles
+
+[init]
+	defaultBranch = master
