@@ -6,8 +6,7 @@
 	email = jinoyoko@outlook.com
 
 [safe]
-	directory = /home/jinoyoko/Repos
-	directory = /home/jinoyoko/dotfiles
+	directory = ~/Repos
 
 [init]
 	defaultBranch = master
