@@ -1,0 +1,25 @@
+- name: Install hyprland with other visual components
+  become: yes
+  community.general.pacman:
+    name:
+      - hyprland
+      - hyprlock
+      - hyprshot
+      - hypridle
+      - xdg-desktop-portal-hyprland
+      - alacritty                        
+      - waybar
+      - wlrrandr                    
+    state: present
+  when: ansible_os_family == "Archlinux"
+  tags: [hyprland, gui]
+
+- name: Install mvppaper for video backgrounds
+  kewlfft.aur.aur:
+    name:
+      - mpvpaper                     
+    use: yay
+    state: present
+  become: no
+  when: ansible_os_family == "Archlinux"
+  tags: [hyprland, wallpaper]

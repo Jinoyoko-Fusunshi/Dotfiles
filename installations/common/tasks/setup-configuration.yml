@@ -1,0 +1,10 @@
+- name: "Setup stow dotfiles"
+  ansible.builtin.shell: "stow -v -R -t ~ {{ item }}"
+  args:
+    chdir: "{{ playbook_dir }}/../../config-files"
+  vars:
+    dotfiles_modules:
+      - common
+  loop: "{{ dotfiles_modules }}"
+  register: stow_result
+  changed_when: "'LINK' in stow_result.stderr or 'UNLINK' in stow_result.stderr"

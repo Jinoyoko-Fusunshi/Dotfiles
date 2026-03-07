@@ -1,0 +1,9 @@
+[core]
+	editor = code
+
+[user]
+	name = Pascal-lyon Adam
+	email = pascal.lyon.adam@outlook.com
+
+[init]
+	defaultBranch = main

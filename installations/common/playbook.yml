@@ -1,0 +1,10 @@
+- name: Setup development environment
+  hosts: localhost
+  tasks:
+    - name: "Install ides"
+      include_tasks: tasks/install-ides.yml
+      tags: ides
+
+    - name: "Setup configuration"
+      include_tasks: tasks/setup-configuration.yml
+      tags: dotfiles

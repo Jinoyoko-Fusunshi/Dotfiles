@@ -1,0 +1,204 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "rust-analyzer.rustc.source": "/home/jinoyoko/.cargo/bin",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "cSpell.userWords": [
+        "Billz",
+        "Billzs",
+        "Dtos",
+        "Npgsql",
+        "xunit"
+    ],
+    "files.autoSave": "afterDelay",
+    // Language behaviors
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp",
+        "editor.formatOnPaste": true,
+        "editor.formatOnType": true,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.semanticHighlighting.enabled": false,
+        "editor.codeLens": true,
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    // Editor stylings
+    "editor.fontFamily": "'CommitMono Nerd Font Mono'",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.formatOnSave": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                // Global comments
+                "scope": "comment",
+                "settings": {
+                    "foreground": "#cbc6c7",
+                    "fontStyle": "italic"
+                }
+            },
+            // C#
+            {
+                // keywords
+                "scope": [
+                    "storage.type.class",
+                    "storage.type.interface",
+                    "storage.type.struct",
+                    "storage.type.enum",
+                    "storage.type.var",
+                    "keyword.operator.expression.new.cs",
+                    "storage.type.namespace.cs",
+                    "storage.modifier",
+                    "storage.type.class",
+                    "storage.type.interface",
+                    "storage.type.struct",
+                    "storage.type.enum",
+                    "storage.type.accessor",
+                    "punctuation.terminator.statement.cs",
+                    "punctuation.curlybrace",
+                    "keyword.other.directive.using.cs"
+                ],
+                "settings": {
+                    "foreground": "#a9556d",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                // inteface, enum, class, record, name keywords
+                "scope": [
+                    "entity.name.type.cs",
+                    "entity.name.type.class.cs",
+                    "entity.name.type.interface.cs",
+                    "entity.name.type.enum.cs",
+                    "entity.name.type.record.cs",
+                    "keyword.type",
+                    "variable.other.object"
+                ],
+                "settings": {
+                    "foreground": "#fa6363",
+                },
+            },
+            {
+                // namespace name
+                "scope": "entity.name.type.namespace.cs",
+                "settings": {
+                    "foreground": "#fcc6fc",
+                },
+            },
+            {
+                // methods
+                "scope": "entity.name.function.cs",
+                "settings": {
+                    "foreground": "#6ab5ff",
+                },
+            },
+            {
+                // variables
+                "scope": [
+                    "entity.name.variable",
+                    "variable.other.readwrite.local.cs",
+                    "variable.other.readwrite.cs",
+                    "variable.other.object.property.cs"
+                ],
+                "settings": {
+                    "foreground": "#fcf6f6",
+                },
+            },
+            // MSBuild
+            {
+                // Keywords
+                "scope": [
+                    "entity.name.tag.localname.xml",
+                    "meta.tag.xml",
+                ],
+                "settings": {
+                    "foreground": "#a9556d",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                // Properties
+                "scope": [
+                    "entity.other.attribute-name.localname.xml",
+                ],
+                "settings": {
+                    "foreground": "#fa6363",
+                }
+            },
+            // JSON
+            {
+                "scope": [
+                    "support.type.property-name.json",
+                    "string.json",
+                    "meta.structure.dictionary.json",
+                    "source.json"
+                ],
+                "settings": {
+                    "foreground": "#a9556d"
+                }
+            },
+            // Markdown
+            {
+                // Headdings, Listings
+                "scope": [
+                    "punctuation.definition.heading.markdown",
+                    "punctuation.definition.list.begin.markdown"
+                ],
+                "settings": {
+                    "foreground": "#a9556d",
+                }
+            },
+            {
+                // Heading titles
+                "scope": [
+                    "entity.name.section.markdown"
+                ],
+                "settings": {
+                    "foreground": "#fa6363"
+                }
+            }
+        ]
+    },
+    "terminal.integrated.fontFamily": "'CommitMono Nerd Font Mono'",
+    // "workbench.colorTheme": "JetBrains Rider Dark Theme",
+    "workbench.iconTheme": "jetbrains-file-icon-theme-dark",
+    "workbench.editor.showTabs": "multiple",
+    "window.titleBarStyle": "custom",
+    "workbench.colorCustomizations": {
+        "editor.background": "#1d1d1d",
+        "editor.lineHighlightBackground": "#e1c8c823",
+        "focusBorder": "#ff7373",
+        "activityBar.background": "#310101",
+        "activityBar.foreground": "#ff7676",
+        "activityBar.inactiveForeground": "#ad7777",
+        "activityBarBadge.background": "#7a3e3e",
+        "activityBarBadge.foreground": "#ffffff",
+        "sideBar.background": "#1c1111",
+        "sideBar.foreground": "#deacac",
+        "sideBarSectionHeader.background": "#400a0a",
+        "sideBarSectionHeader.foreground": "#d3b6b6",
+        "titleBar.activeBackground": "#5a0505",
+        "titleBar.activeForeground": "#ee8787",
+        "titleBar.inactiveBackground": "#260d0d",
+        "titleBar.inactiveForeground": "#747474",
+        "statusBar.background": "#5a0505",
+        "statusBar.foreground": "#ee8787",
+        "statusBar.noFolderBackground": "#805959",
+        "statusBar.debuggingBackground": "#f6f695",
+        "statusBar.debuggingForeground": "#434343"
+    },
+    // Breadcrumbs
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.icons": true,
+    "breadcrumbs.filePath": "on",
+    // Dotnet C# settings
+    "dotnet.inlayHints.enableInlayHintsForParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+}

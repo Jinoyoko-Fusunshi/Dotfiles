@@ -1,0 +1,57 @@
+- name: Install VS Code
+  block:
+    # Linux Arch
+    - name: Install VS Code on Arch
+      kewlfft.aur.aur:
+        name: visual-studio-code-bin
+        state: present
+        use: yay
+      when: ansible_os_family == "Archlinux"
+      become: no
+
+    # Linux Debian Distros
+    - name: Install VS Code on Debian Distros
+      become: yes
+      block:
+        - name: Install dependencies
+          ansible.builtin.apt:
+            name: [apt-transport-https, curl, gpg]
+            state: present
+
+        - name: Add Microsoft GPG Key
+          ansible.builtin.get_url:
+            url: https://packages.microsoft.com/keys/microsoft.asc
+            dest: /usr/share/keyrings/microsoft.gpg
+            mode: '0644'
+
+        - name: Add VS Code Repository
+          ansible.builtin.apt_repository:
+            repo: "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/code stable main"
+            state: present
+            filename: vscode
+
+        - name: Install VS Code via apt
+          ansible.builtin.apt:
+            name: code
+            state: present
+            update_cache: yes
+      when: ansible_os_family == "Debian"
+
+    # Install extensions
+    - name: "Install VS Code extensions"
+      ansible.builtin.shell: "code --install-extension {{ item }} --force"
+      loop: "{{ lookup('file', playbook_dir + '/../../config-files/common/.vscode/vscode_extensions.txt').splitlines() }}"
+      register: extension_result
+      changed_when: "'is already installed' not in extension_result.stdout"
+      become: no
+
+  tags: [vscode, ides]
+
+
+- name: Install Neovim
+  block:
+    - name: Install Neovim
+      package:
+        name: neovim
+      become: yes
+  tags: [nvim, ides]
