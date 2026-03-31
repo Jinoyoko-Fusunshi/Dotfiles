@@ -4,3 +4,9 @@
 
 # package caches
 **/.nuget/packages/**
+
+# rustup
+**/.rustup/toolchains/
+**/.rustup/tmp/
+**/.rustup/update-hashes/
+**/.rustup/downloads/

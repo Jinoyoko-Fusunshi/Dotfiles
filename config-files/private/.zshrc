@@ -25,4 +25,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # SSH Agent
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 eval $(ssh-agent -s) > /dev/null
+eval $(keychain --eval --quiet github_ed25519)
+# Added by get-aspire-cli.sh
+export PATH="$HOME/.aspire/bin:$PATH"
