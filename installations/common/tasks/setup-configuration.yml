@@ -8,3 +8,4 @@
   loop: "{{ dotfiles_modules }}"
   register: stow_result
   changed_when: "'LINK' in stow_result.stderr or 'UNLINK' in stow_result.stderr"
+  tags: [configs]

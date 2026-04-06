@@ -1,10 +1,19 @@
 - name: Setup development environment
   hosts: localhost
   tasks:
-    - name: "Install ides"
-      include_tasks: ../common/tasks/install-ides.yml
-      tags: ides
+    - name: "Install desktop environments"
+      include_tasks: tasks/install-desktop-environment.yml
+      tags: desktop
+    - name: "Install tools"
+      include_tasks: tasks/install-tools.yml
+      tags: tools
+    - name: "Install runtimes"
+      include_tasks: tasks/install-runtimes.yml
+      tags: runtimes
     - name: "Install zsh plugins"
       include_tasks: tasks/install-zsh-plugins.yml
-      tags: ides
+      tags: terminal
+    - name: "Setup configurations"
+      include_tasks: tasks/setup-configuration.yml
+      tags: configs
       

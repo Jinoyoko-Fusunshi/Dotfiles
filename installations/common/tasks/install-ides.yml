@@ -44,7 +44,6 @@
       register: extension_result
       changed_when: "'is already installed' not in extension_result.stdout"
       become: no
-
   tags: [vscode, ides]
 
 
@@ -53,5 +52,6 @@
     - name: Install Neovim
       package:
         name: neovim
-      become: yes
+        state: present
+  become: yes
   tags: [nvim, ides]

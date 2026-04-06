@@ -1,0 +1,13 @@
+- name: "Install tools"
+  ansible.builtin.package:
+    name: 
+      - pavucontrol
+      - blueman
+      - rofi
+      - wlr-randr  
+      - lazygit
+      - git-delta
+      - tmux
+    state: present
+  tags: tools
+  become: yes

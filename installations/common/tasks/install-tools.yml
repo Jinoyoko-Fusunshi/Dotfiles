@@ -1,0 +1,6 @@
+- name: Install kewlfft aur ansible package command
+  community.general.ansible_galaxy_install:
+    type: collection
+    name: kewlfft.aur
+    state: present
+  tags: tools

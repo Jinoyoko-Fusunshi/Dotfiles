@@ -1,6 +1,10 @@
 - name: Setup development environment
   hosts: localhost
   tasks:
+    - name: "Install base tools"
+      include_tasks: tasks/install-tools.yml
+      tags: tools
+
     - name: "Install ides"
       include_tasks: tasks/install-ides.yml
       tags: ides

@@ -1,12 +1,5 @@
-- name: "Define stow components"
-  vars:
-    dotfiles_modules:
-      - private
-      - common
-
-  tasks:
-    - name: "Setup stow dotfiles"
-      ansible.builtin.shell: "stow -v -d ../../config-files -R -t ~ {{ item }}"
-      loop: "{{ dotfiles_modules }}"
-      register: stow_result
-      changed_when: "'LINK' in stow_result.stderr or 'UNLINK' in stow_result.stderr"
+- name: "Setup stow dotfiles"
+  ansible.builtin.shell: "stow -v -d ../../config-files -R -t ~ private"
+  register: stow_result
+  changed_when: "'LINK' in stow_result.stderr or 'UNLINK' in stow_result.stderr"
+  tags: [configs]

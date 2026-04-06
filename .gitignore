@@ -4,6 +4,7 @@
 
 # package caches
 **/.nuget/packages/**
+**/plugins/**
 
 # rustup
 **/.rustup/toolchains/
